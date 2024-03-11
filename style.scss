@@ -178,9 +178,91 @@ footer{
 }
 
 @media (max-width: 1250px) {
+    header .logo{
+        margin-left: 5vw;
+    }
     .contenedor{
         flex-direction: column;
         
         height: auto;
+        gap: 10px;
+
+        .caja-entrada{
+            margin-top: 20px;
+            width: 90vw;
+            height: auto;
+    
+            .caja-mensaje{
+                margin: 40px;
+    
+                #mensaje {
+                    height: 40vh;
+                }
+            }
+            .botones{
+                margin-bottom: 20px;
+            }
+        }
+        .caja-salida{
+            width: 90vw;
+            height: 50vh;
+
+            #area-Respuesta{
+                width: 80%;
+                text-align: center;
+            }
+        }
+    }
+    footer{
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    header{
+        height: 5vh;
+    } .logo{
+        width: 20px;
+    }
+    .contenedor{
+        height: 90vh;
+
+        .caja-entrada{
+            border: none;
+    
+            .caja-mensaje{
+                margin: 0;
+                margin-bottom: 10px;
+    
+                #mensaje {
+                    height: 30vh;
+                }
+            }
+            .botones{
+                align-items: center;
+                gap: 10px;
+                flex-direction: column;
+                margin: 0;
+
+                .btn{
+                    padding: 10px;
+                    width: 100%;
+                }
+            }
+        }
+        .caja-salida{
+            background-color: #D9D9D9;
+            border: none;
+
+            height: 40vh;
+        }
+    }
+    footer{
+        height: 5vh;
+        font-size: 11px;
+
+        a{
+            text-decoration: none;
+        }
     }
   }
