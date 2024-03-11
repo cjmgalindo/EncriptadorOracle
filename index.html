@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- hoja de estilos -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <img src="Assets/Logo.svg" alt="logo de alura" class="logo">
+    </header>
+    <div class="contenedor">
+        <section class="caja-entrada">
+            <div class="caja-mensaje">
+                <textarea id="mensaje" type="text" autofocus></textarea>
+                <div class="caja-information">
+                    <img src="Assets/Information.svg" alt="">
+                    <p>Solo letras minúsculas y sin acento.</p>
+                </div>
+            </div>
+            <div class="botones">
+                <button class="btn" id="btn-encriptador">Encriptar</button>
+                <button class="btn" id="btn-desencriptador">Desencriptador</button>
+            </div>
+        </section>
+        <section class="caja-salida">
+            <div class="mensajeNoEncontrado">
+                <h3>Ningún mensaje fue encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <div id="area-Respuesta"></div>
+            <button id="btn-copiar">copiar</button>
+        </section>
+    </div> 
+    <footer><b><p>made by  <a href="https://www.linkedin.com/in/cjmgalindo/" target="_blank"> @cjmgalindo</a> | 2024</p></b></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
