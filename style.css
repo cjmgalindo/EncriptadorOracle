@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+
+.btn {
+  width: 250px;
+  border: 1px solid black;
+  padding: 15px 75px;
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+header {
+  height: 10vh;
+  display: flex;
+  align-items: end;
+}
+header .logo {
+  margin-left: 2.5vw;
+}
+
+.contenedor {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+}
+.contenedor .caja-entrada {
+  width: 60vw;
+  height: 70vh;
+  border: 1px solid black;
+}
+.contenedor .caja-entrada .caja-mensaje {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px;
+}
+.contenedor .caja-entrada .caja-mensaje .caja-information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: flex-start;
+  font-size: 11px;
+  color: #495057;
+  margin-top: 8px;
+  font-weight: bold;
+}
+.contenedor .caja-entrada .caja-mensaje #mensaje {
+  height: 50vh;
+  width: 100%;
+  resize: none;
+  border: none;
+  outline: none;
+  font-size: 19px;
+}
+.contenedor .caja-entrada .botones {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  background: white;
+}
+.contenedor .caja-entrada .botones #btn-encriptador {
+  background-color: rgba(4, 4, 4, 0.72);
+  color: white;
+}
+.contenedor .caja-salida {
+  width: 30vw;
+  height: 70vh;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.contenedor .caja-salida .mensajeNoEncontrado {
+  width: 70%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contenedor .caja-salida .mensajeNoEncontrado h3 {
+  width: 50%;
+}
+.contenedor .caja-salida .mensajeNoEncontrado p {
+  margin-top: 18px;
+}
+.contenedor .caja-salida #area-Respuesta {
+  width: 60%;
+  height: 70%;
+  overflow-x: hidden;
+  display: none;
+}
+.contenedor .caja-salida #btn-copiar {
+  border: 1px solid black;
+  padding: 10px 70px;
+  background: white;
+  cursor: pointer;
+  display: none;
+}
+
+footer {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  font-size: 13px;
+}
+
+@media (max-width: 1250px) {
+  .contenedor {
+    flex-direction: column;
+    height: auto;
+  }
+}/*# sourceMappingURL=style.css.map */
